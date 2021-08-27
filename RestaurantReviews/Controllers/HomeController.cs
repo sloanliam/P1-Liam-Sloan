@@ -13,6 +13,9 @@ namespace RestaurantReviews.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        DataAccess access = new DataAccess();
+        UserController userController = new UserController();
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;

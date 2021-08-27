@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using RestaurantReviews.Data;
+using RestaurantReviews.Data.Entities;
 
 namespace RestaurantReviews.Models
 {

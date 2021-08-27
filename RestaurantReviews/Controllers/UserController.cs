@@ -11,9 +11,19 @@ namespace RestaurantReviews.Controllers
     {
         // variable to identify is user is logged in.
         bool loggedIn = false;
-        string username;
+        string username = "none";
 
         DataAccess access = new DataAccess();
+
+        public bool isLoggedIn()
+        {
+            return loggedIn;
+        }
+
+        public string getUsername()
+        {
+            return username;
+        }
 
         public IActionResult Index()
         {
@@ -41,6 +51,7 @@ namespace RestaurantReviews.Controllers
             {
                 ViewBag.Username = username;
                 this.username = username;
+                loggedIn = true;
                 return View("LoggedIn");
             }
         }
