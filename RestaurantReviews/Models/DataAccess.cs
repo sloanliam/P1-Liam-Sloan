@@ -29,5 +29,10 @@ namespace RestaurantReviews.Models
         {
             return appRepo.LogIn(username, password);
         }
+
+        public string RegisterAccount(string name, string username, string password)
+        {
+            return appRepo.RegisterAccount(name, username, password);
+        }
     }
 }

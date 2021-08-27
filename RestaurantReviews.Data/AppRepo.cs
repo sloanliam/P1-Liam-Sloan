@@ -72,5 +72,36 @@ namespace RestaurantReviews.Data
                 return "Not a valid login.";
             }
         }
+
+        public string RegisterAccount(string name, string username, string password)
+        {
+
+            string resultUsername;
+            try
+            {
+                var user = context.Users.Single(u => u.Username.Equals(username));
+                resultUsername = user.Username;
+            } catch(System.InvalidOperationException e)
+            {
+                resultUsername = "none";
+            }
+
+            if (resultUsername.Equals(username))
+            {
+                return "That username already exists, please enter a new one";
+            } else
+            {
+                context.Add(new Entities.User
+                {
+                    Name = name,
+                    Username = username,
+                    Password = password
+                }) ;
+
+                context.SaveChanges();
+
+                return "Profile Created.";
+            }
+        }
     }
 }

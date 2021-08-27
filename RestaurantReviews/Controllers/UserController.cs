@@ -49,5 +49,12 @@ namespace RestaurantReviews.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Register(string name, string username, string password)
+        {
+            ViewData["name"] = access.RegisterAccount(name, username, password);
+            return View();
+        }
     }
 }
