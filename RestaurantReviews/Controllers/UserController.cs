@@ -40,8 +40,14 @@ namespace RestaurantReviews.Controllers
             } else
             {
                 ViewBag.Username = username;
+                this.username = username;
                 return View("LoggedIn");
             }
+        }
+
+        public IActionResult Register()
+        {
+            return View();
         }
     }
 }

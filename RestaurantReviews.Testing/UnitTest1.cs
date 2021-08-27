@@ -8,9 +8,15 @@ namespace RestaurantReviews.Testing
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void RegisterNewUser()
         {
-           
+            AppRepo appRepo = new AppRepo();
+
+            var registerAttempt = appRepo.Register("lim", "sloanli", "password");
+
+            bool expectedResult = true;
+
+            Assert.Equal(expectedResult, registerAttempt);
         }
     }
 }
