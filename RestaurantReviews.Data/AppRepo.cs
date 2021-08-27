@@ -27,5 +27,50 @@ namespace RestaurantReviews.Data
 
             return (string)userList.Username;
         }
+
+        // This method will return true or false if the user is an admin.
+        public bool IsAdmin(string username)
+        {
+            try
+            {
+                var user = context.Users.Single(u => u.Username.Equals(username));
+
+                if (user.IsAdmin.Equals("yes"))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            } catch(System.InvalidOperationException e)
+            {
+                return false;
+            }
+        }
+
+        public string LogIn(string username, string password)
+        {
+            try
+            {
+                var user = context.Users.Single(u => u.Username.Equals(username));
+
+                if (user.Password != password)
+                {
+                    return "Not a valid login.";
+                }
+                else if (user.Password == password)
+                {
+                    return username;
+                }
+                else
+                {
+                    return "Something went wrong...";
+                }
+            } catch (System.InvalidOperationException e)
+            {
+                return "Not a valid login.";
+            }
+        }
     }
 }

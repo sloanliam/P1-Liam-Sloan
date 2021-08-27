@@ -19,5 +19,15 @@ namespace RestaurantReviews.Models
         {
             return appRepo.GetUsername(userId);
         }
+
+        public bool isAdmin(string username)
+        {
+            return appRepo.IsAdmin(username);
+        }
+
+        public string LogIn(string username, string password)
+        {
+            return appRepo.LogIn(username, password);
+        }
     }
 }
