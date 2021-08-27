@@ -14,8 +14,5 @@ namespace RestaurantReviews.Data.Models
         public int? RestaurantId { get; set; }
         public int? UserId { get; set; }
         public int? Stars { get; set; }
-
-        public virtual Restaurant Restaurant { get; set; }
-        public virtual User User { get; set; }
     }
 }

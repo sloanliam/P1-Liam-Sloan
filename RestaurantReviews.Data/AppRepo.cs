@@ -1,4 +1,5 @@
 ﻿using RestaurantReviews.Data.Entities;
+using RestaurantReviews.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -102,6 +103,35 @@ namespace RestaurantReviews.Data
 
                 return "Profile Created.";
             }
+        }
+
+        public string GetRestaurantById(int id)
+        {
+            var restaurant = context.Restaurants.Single(r => r.Id == id);
+
+            return $"{restaurant.Name}";
+        }
+
+        public List<int> GetRestaurantIds(string name)
+        {
+            List<int> ids = new List<int>();
+            var restaurantList = context.Restaurants.Where(r => r.Name.Equals(name));
+            foreach(var id in restaurantList)
+            {
+                ids.Add(id.Id);
+            }
+
+            return ids;
+        }
+
+        public void CreateAReview(string restaurant, int zipcode)
+        {
+
+        }
+
+        public List<Models.Restaurant> ListRestaurants()
+        {
+            return context.Restaurants.Select(r => new Models.Restaurant(r.Id, r.Name, r.Zipcode)).ToList();
         }
     }
 }
