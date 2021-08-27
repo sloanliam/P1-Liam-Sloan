@@ -19,13 +19,13 @@ namespace RestaurantReviews.Data
         /// Ef Core Tools
         /// </dependencies>
 
-        private revtrainingdbContext _context;
+        revtrainingdbContext context = new revtrainingdbContext();
 
         public string GetUsername(int userId)
         {
-            var userList = _context.Users.Where(u => u.Id == userId);
+            var userList = context.Users.Single(u => u.Id == userId);
 
-            return userList.ToString();
+            return (string)userList.Username;
         }
     }
 }
