@@ -147,5 +147,21 @@ namespace RestaurantReviews.Data
 
             return restaurantList;
         }
+
+        public List<Models.Review> GetReviews(string name, int zipcode)
+        {
+            var restaurant = context.Restaurants.Single(r => r.Name.Equals(name) && r.Zipcode == zipcode);
+
+            var reviews = context.Reviews.Where(r => r.RestaurantId == restaurant.Id).ToList();
+
+            List<Models.Review> result = new List<Models.Review>();
+
+            foreach(var review in reviews)
+            {
+                result.Add(new Models.Review(review.Review1, review.Stars));
+            }
+
+            return result;
+        }
     }
 }

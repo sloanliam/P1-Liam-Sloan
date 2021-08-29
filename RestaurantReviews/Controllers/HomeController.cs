@@ -36,6 +36,14 @@ namespace RestaurantReviews.Controllers
             return View(foundRestaurants);
         }
 
+        [HttpPost]
+        public IActionResult GetReviews(string name, int zipcode)
+        {
+            List<Data.Models.Review> foundReviews = access.GetReviews(name, zipcode);
+
+            return View("Index", foundReviews);
+        }
+
         public IActionResult Privacy()
         {
             return View();

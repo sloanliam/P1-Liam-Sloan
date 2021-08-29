@@ -19,5 +19,17 @@ namespace RestaurantReviews.Testing
             Assert.Equal(expectedResult, result[0]);
             
         }
+
+        [Fact]
+        public void GetReviews()
+        {
+            AppRepo appRepo = new AppRepo();
+
+            string expectedResult = "test";
+
+            var result = appRepo.GetReviews("mcdonalds", 14063);
+
+            
+        }
     }
 }

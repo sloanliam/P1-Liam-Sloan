@@ -9,6 +9,13 @@ namespace RestaurantReviews.Data.Models
 {
     public class Review
     {
+
+        public Review(string review, int? stars)
+        {
+            this.Review1 = review;
+            this.Stars = stars;
+        }
+
         public int Id { get; set; }
         public string Review1 { get; set; }
         public int? RestaurantId { get; set; }

@@ -47,6 +47,9 @@ namespace RestaurantReviews.Models
             return appRepo.FindRestaurant(name);
         }
 
-        
+        public List<Data.Models.Review> GetReviews(string name, int zipcode)
+        {
+            return appRepo.GetReviews(name, zipcode);
+        }
     }
 }
