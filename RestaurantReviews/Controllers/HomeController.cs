@@ -31,11 +31,9 @@ namespace RestaurantReviews.Controllers
         [HttpPost]
         public IActionResult Index(string restaurant)
         {
-            var viewModel = new List<string>()
-            {
-                "liam"
-            };
-            return View(viewModel);
+            List<string> foundRestaurants = access.FindRestaurant(restaurant);
+            
+            return View(foundRestaurants);
         }
 
         public IActionResult Privacy()

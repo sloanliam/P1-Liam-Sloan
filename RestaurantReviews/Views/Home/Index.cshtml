@@ -14,5 +14,15 @@
 </form>
 
 <ul>
-    <li>@Model</li>
+    @if (Model != null)
+    {
+        for (int i = 0; i < Model.Count; i++)
+        {
+        <li>@Model[i]</li>
+        }
+    }
 </ul>
+
+<form method="post">
+
+</form>
