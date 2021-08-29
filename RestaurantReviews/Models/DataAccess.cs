@@ -12,11 +12,6 @@ namespace RestaurantReviews.Models
     {
         AppRepo appRepo = new AppRepo();
 
-        public void Initialize()
-        {
-
-        }
-
         public string GetUsername(int userId)
         {
             return appRepo.GetUsername(userId);
@@ -45,6 +40,11 @@ namespace RestaurantReviews.Models
         public List<Data.Models.Restaurant> ListRestaurants()
         {
             return appRepo.ListRestaurants();
+        }
+
+        public List<string> FindRestaurant(string name)
+        {
+            return appRepo.FindRestaurant(name);
         }
     }
 }

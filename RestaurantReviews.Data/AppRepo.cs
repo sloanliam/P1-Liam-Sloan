@@ -133,5 +133,19 @@ namespace RestaurantReviews.Data
         {
             return context.Restaurants.Select(r => new Models.Restaurant(r.Id, r.Name, r.Zipcode)).ToList();
         }
+
+        public List<string> FindRestaurant(string name)
+        {
+            var restaurants = context.Restaurants.Where(r => r.Name.Equals(name)).ToList();
+
+            List<string> restaurantList = new List<string>();
+
+            foreach(var restaurant in restaurants)
+            {
+                restaurantList.Add($"{restaurant.Name} located at {restaurant.Zipcode}");
+            }
+
+            return restaurantList;
+        }
     }
 }

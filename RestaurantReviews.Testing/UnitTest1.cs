@@ -8,14 +8,15 @@ namespace RestaurantReviews.Testing
     public class UnitTest1
     {
         [Fact]
-        public void RegisterNewUser()
+        public void FindRestaurant()
         {
             AppRepo appRepo = new AppRepo();
 
-            
+            string expectedResult = "test";
 
-            bool expectedResult = true;
+            var result = appRepo.FindRestaurant("mcdonalds");
 
+            Assert.Equal(expectedResult, result[0]);
             
         }
     }

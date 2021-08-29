@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RestaurantReviews.Data.Models;
 using RestaurantReviews.Models;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,17 @@ namespace RestaurantReviews.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        // restaurant searcher
+        [HttpPost]
+        public IActionResult Index(string restaurant)
+        {
+            var viewModel = new List<string>()
+            {
+                "liam"
+            };
+            return View(viewModel);
         }
 
         public IActionResult Privacy()

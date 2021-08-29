@@ -7,10 +7,12 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<form method="get">
+<form method="post">
     <p>Enter the name of a Restaurant</p>
     <input type="text" name="restaurant" />
     <input type="submit" />
 </form>
 
-<p></p>
+<ul>
+    <li>@Model</li>
+</ul>
