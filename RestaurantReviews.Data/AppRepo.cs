@@ -50,6 +50,8 @@ namespace RestaurantReviews.Data
             }
         }
 
+
+        // Log into the app
         public string LogIn(string username, string password)
         {
             try
@@ -74,6 +76,8 @@ namespace RestaurantReviews.Data
             }
         }
 
+
+        // create a new account
         public string RegisterAccount(string name, string username, string password)
         {
 
@@ -105,6 +109,8 @@ namespace RestaurantReviews.Data
             }
         }
 
+        
+        //return restaurant's name from given Id
         public string GetRestaurantById(int id)
         {
             var restaurant = context.Restaurants.Single(r => r.Id == id);
@@ -112,6 +118,8 @@ namespace RestaurantReviews.Data
             return $"{restaurant.Name}";
         }
 
+
+        //return a collection of restaurant Id's
         public List<int> GetRestaurantIds(string name)
         {
             List<int> ids = new List<int>();
@@ -124,17 +132,26 @@ namespace RestaurantReviews.Data
             return ids;
         }
 
-        // submit a review
-        public void CreateAReview(string restaurant, int zipcode)
+        
+        //fetches the id of a restaurant from it's name and zipcode
+        public int GetRestaurantId(string name, int zipcode)
         {
-            
+            var restaurants = context.Restaurants.Single(r => r.Name.Equals(name) && r.Zipcode == zipcode);
+
+            int restaurantId = restaurants.Id;
+
+            return restaurantId;
         }
 
+
+        // Will return a List of restaurants
         public List<Models.Restaurant> ListRestaurants()
         {
             return context.Restaurants.Select(r => new Models.Restaurant(r.Id, r.Name, r.Zipcode)).ToList();
         }
 
+
+        // find a restaurant by name (will include all from name, no specifications on zipcode)
         public List<string> FindRestaurant(string name)
         {
             var restaurants = context.Restaurants.Where(r => r.Name.Equals(name)).ToList();
@@ -149,6 +166,8 @@ namespace RestaurantReviews.Data
             return restaurantList;
         }
 
+
+        // List reviews for a restaurant
         public List<Models.Review> GetReviews(string name, int zipcode)
         {
             var restaurant = context.Restaurants.Single(r => r.Name.Equals(name) && r.Zipcode == zipcode);
@@ -164,6 +183,7 @@ namespace RestaurantReviews.Data
 
             return result;
         }
+
 
         //get the average rating for a restaurant
         public int GetStarRating(string name, int zipcode)
