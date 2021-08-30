@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RestaurantReviews.Data;
 using RestaurantReviews.Models;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,12 @@ namespace RestaurantReviews.Controllers
         bool loggedIn = false;
         string username = "none";
 
-        DataAccess access = new DataAccess();
+        private IRepository _apprepo;
+
+        public UserController(IRepository apprepo)
+        {
+            _apprepo = apprepo;
+        }
 
         public bool isLoggedIn()
         {
@@ -45,7 +51,7 @@ namespace RestaurantReviews.Controllers
         [HttpPost]
         public IActionResult SignIn(string username, string password)
         {
-            if(access.LogIn(username, password).Equals("Not a valid login.")){
+            if(_apprepo.LogIn(username, password).Equals("Not a valid login.")){
                 return View("Error");
             } else
             {
@@ -64,7 +70,7 @@ namespace RestaurantReviews.Controllers
         [HttpPost]
         public IActionResult Register(string name, string username, string password)
         {
-            ViewData["name"] = access.RegisterAccount(name, username, password);
+            ViewData["name"] = _apprepo.RegisterAccount(name, username, password);
             return View();
         }
     }

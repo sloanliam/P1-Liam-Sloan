@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RestaurantReviews.Data;
 using RestaurantReviews.Data.Models;
 using RestaurantReviews.Models;
 using System;
@@ -13,13 +14,12 @@ namespace RestaurantReviews.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private IRepository _appRepo;
 
-        DataAccess access = new DataAccess();
-        UserController userController = new UserController();
-
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IRepository appRepo)
         {
             _logger = logger;
+            _appRepo = appRepo;
         }
 
         public IActionResult Index()
@@ -27,12 +27,10 @@ namespace RestaurantReviews.Controllers
             return View();
         }
 
-        
-
         [HttpPost]
         public IActionResult GetReviews(string name, int zipcode)
         {
-            List<Data.Models.Review> foundReviews = access.GetReviews(name, zipcode);
+            List<Data.Models.Review> foundReviews = _appRepo.GetReviews(name, zipcode);
 
             return View("Index", foundReviews);
         }

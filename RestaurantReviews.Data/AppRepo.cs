@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantReviews.Data
 {
-    public class AppRepo
+    public class AppRepo : IRepository
     {
         /// <summary>
         /// 
