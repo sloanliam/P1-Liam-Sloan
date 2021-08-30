@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RestaurantReviews.Data;
 using RestaurantReviews.Models;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,13 @@ namespace RestaurantReviews.Controllers
         // variable to identify is user is logged in.
         bool loggedIn = false;
         string username = "none";
+
+        private IRepository _appRepo;
+
+        public UserController(IRepository appRepo)
+        {
+            _appRepo = appRepo;
+        }
 
         public bool isLoggedIn()
         {
@@ -43,7 +51,7 @@ namespace RestaurantReviews.Controllers
         [HttpPost]
         public IActionResult SignIn(string username, string password)
         {
-            if(access.LogIn(username, password).Equals("Not a valid login.")){
+            if(_appRepo.LogIn(username, password).Equals("Not a valid login.")){
                 return View("Error");
             } else
             {
@@ -62,7 +70,7 @@ namespace RestaurantReviews.Controllers
         [HttpPost]
         public IActionResult Register(string name, string username, string password)
         {
-            ViewData["name"] = access.RegisterAccount(name, username, password);
+            ViewData["name"] = _appRepo.RegisterAccount(name, username, password);
             return View();
         }
     }
