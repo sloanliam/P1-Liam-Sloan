@@ -17,16 +17,16 @@
     <input type="submit" class="btn btn-dark"/>
 </form>
 
-<ul>
+<ul class="list-group">
     @if (Model != null)
     {
         @foreach (var i in Model)
         {
-            <br />
-            <li>This Restaurant has a rating of @Html.DisplayFor(m => i.Stars) stars</li>
-            <li>The user's review:</li>
-            <li>@Html.DisplayFor(m => i.Review1)</li>
-            <br />
+            <li class="list-group-item">
+                <b>@Html.DisplayFor(m => i.Stars) stars</b>
+                <br />
+                @Html.DisplayFor(m => i.Review1)
+            </li>
         }
     } else
             {
