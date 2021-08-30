@@ -56,6 +56,7 @@ namespace RestaurantReviews.Controllers
             } else
             {
                 ViewBag.Username = username;
+                TempData["user"] = username;
                 this.username = username;
                 loggedIn = true;
                 return View("LoggedIn");
