@@ -28,5 +28,7 @@ namespace RestaurantReviews.Data
 
         public int GetStarRating(string name, int zipcode);
 
+        public void WriteReview(string username, string restaurant, int zipcode, string review, int stars);
+
     }
 }

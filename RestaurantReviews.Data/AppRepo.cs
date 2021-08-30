@@ -208,5 +208,50 @@ namespace RestaurantReviews.Data
 
             return (int)(int?)result;
         }
+
+
+        public int GetUserId(string username)
+        {
+            var userId = context.Users.Single(u => u.Username.Equals(username));
+            int userIdResult = userId.Id;
+            return userIdResult;
+        }
+
+        // Write a review
+        public void WriteReview(string username, string restaurant, int zipcode, string review, int stars)
+        {
+            try
+            {
+
+                context.Add(new Entities.Review
+                {
+                    RestaurantId = GetRestaurantId(restaurant, zipcode),
+                    UserId = GetUserId(username),
+                    Review1 = review,
+                    Stars = stars
+                });
+                context.SaveChanges();
+
+            } catch (System.InvalidOperationException e)
+            {
+                context.Add(new Entities.Restaurant
+                {
+                    Name = restaurant,
+                    Zipcode = zipcode
+                });
+
+                context.SaveChanges();
+
+                context.Add(new Entities.Review
+                {
+                    RestaurantId = GetRestaurantId(restaurant, zipcode),
+                    UserId = GetUserId(username),
+                    Review1 = review,
+                    Stars = stars
+                });
+                
+                context.SaveChanges();
+            }
+        }
     }
 }
