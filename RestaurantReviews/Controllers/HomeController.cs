@@ -27,14 +27,7 @@ namespace RestaurantReviews.Controllers
             return View();
         }
 
-        // restaurant searcher
-        [HttpPost]
-        public IActionResult Index(string restaurant)
-        {
-            List<string> foundRestaurants = access.FindRestaurant(restaurant);
-            
-            return View(foundRestaurants);
-        }
+        
 
         [HttpPost]
         public IActionResult GetReviews(string name, int zipcode)

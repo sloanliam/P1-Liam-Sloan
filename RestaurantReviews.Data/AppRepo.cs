@@ -124,9 +124,10 @@ namespace RestaurantReviews.Data
             return ids;
         }
 
+        // submit a review
         public void CreateAReview(string restaurant, int zipcode)
         {
-
+            
         }
 
         public List<Models.Restaurant> ListRestaurants()
@@ -162,6 +163,23 @@ namespace RestaurantReviews.Data
             }
 
             return result;
+        }
+
+        //get the average rating for a restaurant
+        public int GetStarRating(string name, int zipcode)
+        {
+            var restaurant = context.Restaurants.Single(r => r.Name.Equals(name) && r.Zipcode == zipcode);
+
+            var reviews = context.Reviews.Where(r => r.RestaurantId == restaurant.Id).ToList();
+
+            int? result = 0;
+
+            foreach(var rating in reviews)
+            {
+                result += rating.Stars;
+            }
+
+            return (int)(int?)result;
         }
     }
 }

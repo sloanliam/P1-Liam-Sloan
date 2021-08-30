@@ -8,12 +8,6 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<form method="post">
-    <p>Enter the name of a Restaurant</p>
-    <input type="text" name="restaurant" />
-    <input type="submit" />
-</form>
-
 <form method="post" asp-action="GetReviews">
     <p>Enter name and zipcode</p>
     <input type="text" name="name">
@@ -24,14 +18,17 @@
 <ul>
     @if (Model != null)
     {
-    @foreach (var i in Model)
-    {
-        <br />
-        <li>This Restaurant has a rating of @Html.DisplayFor(m => i.Stars); stars</li>
-        <li>The user's review:</li>
-        <li>@Html.DisplayFor(m => i.Review1);</li>
-        <br />
-    }
-    }
+        @foreach (var i in Model)
+        {
+            <br />
+            <li>This Restaurant has a rating of @Html.DisplayFor(m => i.Stars) stars</li>
+            <li>The user's review:</li>
+            <li>@Html.DisplayFor(m => i.Review1)</li>
+            <br />
+        }
+    } else
+            {
+                <p>No restaurants found...</p>
+            }
 
 </ul>
