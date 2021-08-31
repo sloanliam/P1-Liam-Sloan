@@ -1,6 +1,4 @@
-﻿@*
-   
-*@
+﻿@model CreatedReview
 @{
 }
 
@@ -8,11 +6,12 @@
 
 <form method="post" asp-action="LeaveReview">
     <p>Restaurant</p>
-    <input type="text" name="name"/>
+    <input type="text" name="name" />
     <p>Zipcode</p>
-    <input type="number" name="zipcode"/>
+    <input type="number" name="zipcode" />
     <p>Review</p>
     <input type="text" name="review" />
+    <span asp-validation-for="Review1" class="text-danger"></span>
     <p>Star Rating</p>
     <input type="number" name="stars" />
     <input type="submit" />

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestaurantReviews.Data;
+using RestaurantReviews.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,15 +24,12 @@ namespace RestaurantReviews.Controllers
 
         public IActionResult LeaveReview(string name, int zipcode, string review, int stars)
         {
-            string user = "Temporary";
-            if(TempData["user"] != null)
+            if (!ModelState.IsValid)
             {
-                user = TempData["user"].ToString();
-                _appRepo.WriteReview(user, name, zipcode, review, stars);
-            } else
-            {
-                ViewData["error"] = "Please sign in first.";
+                return View("Index");
+                
             }
+            
             return View("Index");
         }
     }

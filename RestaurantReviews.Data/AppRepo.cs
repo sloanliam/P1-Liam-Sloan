@@ -218,40 +218,9 @@ namespace RestaurantReviews.Data
         }
 
         // Write a review
-        public void WriteReview(string username, string restaurant, int zipcode, string review, int stars)
+        public void WriteReview(Models.Review review)
         {
-            try
-            {
-
-                context.Add(new Entities.Review
-                {
-                    RestaurantId = GetRestaurantId(restaurant, zipcode),
-                    UserId = GetUserId(username),
-                    Review1 = review,
-                    Stars = stars
-                });
-                context.SaveChanges();
-
-            } catch (System.InvalidOperationException e)
-            {
-                context.Add(new Entities.Restaurant
-                {
-                    Name = restaurant,
-                    Zipcode = zipcode
-                });
-
-                context.SaveChanges();
-
-                context.Add(new Entities.Review
-                {
-                    RestaurantId = GetRestaurantId(restaurant, zipcode),
-                    UserId = GetUserId(username),
-                    Review1 = review,
-                    Stars = stars
-                });
-                
-                context.SaveChanges();
-            }
+            
         }
     }
 }
