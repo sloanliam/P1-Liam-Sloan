@@ -1,24 +1,22 @@
-﻿@*
-   
-*@
+﻿@model CreatedReview
 @{
 }
 
 <h1>Leave a review!</h1>
-
 <form method="post" asp-action="LeaveReview">
     <p>Restaurant</p>
-    <input type="text" name="name"/>
+    <input asp-for="Restaurant" type="text" name="Restaurant"/>
     <p>Zipcode</p>
-    <input type="number" name="zipcode"/>
+    <input asp-for="Zipcode" type="text" name="Zipcode"/>
     <p>Review</p>
-    <input type="text" name="review" />
+    <input asp-for="Review1" type="text" name="Review1" />
+    <span asp-validation-for="Review1" class="text-danger"></span>
     <p>Star Rating</p>
-    <input type="number" name="stars" />
+    <input asp-for="Stars" type="text" name="Stars" />
     <input type="submit" />
 </form>
 
 @if(ViewData["error"] != null)
             {
-                <p>@ViewData["error"]</p>
+                <p class="text-danger">@ViewData["error"]</p>
             }
