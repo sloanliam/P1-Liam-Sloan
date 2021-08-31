@@ -28,10 +28,11 @@ namespace RestaurantReviews.Controllers
             {
                 return View("Index", createdReview);
             }
-                string user = "Temporary";
-                if (TempData["user"] != null)
-                {
-                    user = TempData["user"].ToString();
+                
+            string user = "Temporary";
+            if (TempData["user"] != null)
+            {
+                user = TempData["user"].ToString();
                 var newReview = new CreatedReview
                 {
                     Zipcode = createdReview.Zipcode,
@@ -39,13 +40,11 @@ namespace RestaurantReviews.Controllers
                     Review1 = createdReview.Review1,
                     Stars = createdReview.Stars
                 };
-                    _appRepo.WriteReview(user, newReview.Restaurant, newReview.Zipcode, newReview.Review1, newReview.Stars);
-                }
-                else
-                {
-
-                }
-                return View("Index");
+                _appRepo.WriteReview(user, newReview.Restaurant, newReview.Zipcode, newReview.Review1, newReview.Stars);
+            } else {
+                ViewData["error"] = "You must log in to create a review.";
+            }
+            return View("Index");
         }
     }
 }
