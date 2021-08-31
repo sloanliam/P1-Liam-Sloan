@@ -13,8 +13,23 @@ namespace RestaurantReviews.Models
         [Required]
         public string Review1 { get; set; }
 
-        public int? RestaurantId { get; set; }
-        public int? UserId { get; set; }
-        public int? Stars { get; set; }
+        [Required]
+        public string Restaurant { get; set; }
+
+        [Required]
+        public int Zipcode { get; set; }
+
+        [Required]
+        public int Stars { get; set; }
+
+        public CreatedReview() { }
+
+        public CreatedReview(string name, int zipcode, string review, int stars)
+        {
+            this.Stars = stars;
+            this.Restaurant = name;
+            this.Zipcode = zipcode;
+            this.Review1 = review;
+        }
     }
 }
