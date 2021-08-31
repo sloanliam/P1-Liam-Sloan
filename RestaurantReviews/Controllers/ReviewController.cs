@@ -23,6 +23,11 @@ namespace RestaurantReviews.Controllers
 
         public IActionResult LeaveReview(string name, int zipcode, string review, int stars)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("Index");
+            }
+
             string user = "Temporary";
             if(TempData["user"] != null)
             {
