@@ -10,25 +10,12 @@ namespace RestaurantReviews.Controllers
 {
     public class UserController : Controller
     {
-        // variable to identify is user is logged in.
-        bool loggedIn = false;
-        string username = "none";
 
         private IRepository _appRepo;
 
         public UserController(IRepository appRepo)
         {
             _appRepo = appRepo;
-        }
-
-        public bool isLoggedIn()
-        {
-            return loggedIn;
-        }
-
-        public string getUsername()
-        {
-            return username;
         }
 
         public IActionResult Index()
@@ -38,27 +25,24 @@ namespace RestaurantReviews.Controllers
 
         public IActionResult SignIn()
         {
-            if (!loggedIn)
-            {
-                return View();
-            } else
-            {
-
-            }
-            return View("Index");
+            return View();
         }
 
         [HttpPost]
-        public IActionResult SignIn(string username, string password)
+        public IActionResult SignIn(SignedInUser user)
         {
-            if(_appRepo.LogIn(username, password).Equals("Not a valid login.")){
+
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
+
+            if(_appRepo.LogIn(user.username, user.password).Equals("Not a valid login.")){
                 return View("Error");
             } else
             {
-                ViewBag.Username = username;
-                TempData["user"] = username;
-                this.username = username;
-                loggedIn = true;
+                ViewBag.Username = user.username;
+                TempData["user"] = user.username;
                 return View("LoggedIn");
             }
         }

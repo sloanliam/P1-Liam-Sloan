@@ -6,13 +6,16 @@
 <form method="post" asp-action="LeaveReview">
     <p>Restaurant</p>
     <input asp-for="Restaurant" type="text" name="Restaurant"/>
+    <span asp-validation-for="Restaurant" class="text-danger"></span>
     <p>Zipcode</p>
     <input asp-for="Zipcode" type="text" name="Zipcode"/>
+    <span asp-validation-for="Zipcode" class="text-danger"></span>
     <p>Review</p>
     <input asp-for="Review1" type="text" name="Review1" />
     <span asp-validation-for="Review1" class="text-danger"></span>
     <p>Star Rating</p>
     <input asp-for="Stars" type="text" name="Stars" />
+    <span asp-validation-for="Stars" class="text-danger"></span>
     <input type="submit" />
 </form>
 
