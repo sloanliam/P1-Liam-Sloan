@@ -9,37 +9,38 @@
     <h1 class="display-4">Welcome to Review Shack</h1>
 </div>
 
-@if (TempData["user"] != null)
+@if (ViewData["user"] != null)
 {
-    <h2>You are logged in as @TempData["user"]</h2>
+    <h2>You are logged in as @TempData["user"]
+    </h2>
 }
 
 <form method="post" asp-action="GetReviews" class="searchform">
     <p>Enter the restaurant's name and zipcode to find reviews for restaurants in your area.</p>
     <input type="text" name="name">
-    <input type="number"name="zipcode" />
-    <input type="submit" class="btn btn-dark"/>
+    <input type="number" name="zipcode" />
+    <input type="submit" class="btn btn-dark" />
 </form>
 
 <ul class="list-group">
     @if (Model != null)
     {
-        @foreach (var i in Model)
+    @foreach (var i in Model)
         {
-            <li class="list-group-item">
-                <b>@Html.DisplayFor(m => i.Stars) stars</b>
-                <br />
-                @Html.DisplayFor(m => i.Review1)
-            </li>
+    <li class="list-group-item">
+        <b>@Html.DisplayFor(m => i.Stars) stars</b>
+        <br />
+        @Html.DisplayFor(m => i.Review1)
+    </li>
         }
-        <li class="list-group-item">
-            <b>The Final Verdict:</b>
-            <br />
-            <b>@ViewData["finalreview"] stars</b>
-        </li>
+    <li class="list-group-item">
+        <b>The Final Verdict:</b>
+        <br />
+        <b>@ViewData["finalreview"] stars</b>
+    </li>
     } else
             {
-                <p>No restaurants found...</p>
+    <p>No restaurants found...</p>
             }
 
 </ul>

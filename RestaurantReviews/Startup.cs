@@ -31,6 +31,11 @@ namespace RestaurantReviews
             services.AddDbContext<revtrainingdbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("RevDb")));
 
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromMinutes(2);
+            });
+
             services.AddControllersWithViews();
         }
 
@@ -53,6 +58,8 @@ namespace RestaurantReviews
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
