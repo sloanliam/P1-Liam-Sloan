@@ -6,8 +6,7 @@
 <link href="~/css/stylesheet.css" rel="stylesheet" />
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to Review Shack</h1>
 </div>
 
 @if (TempData["user"] != null)
@@ -16,7 +15,7 @@
 }
 
 <form method="post" asp-action="GetReviews" class="searchform">
-    <p>Enter name and zipcode</p>
+    <p>Enter the restaurant's name and zipcode to find reviews for restaurants in your area.</p>
     <input type="text" name="name">
     <input type="number"name="zipcode" />
     <input type="submit" class="btn btn-dark"/>
@@ -33,9 +32,23 @@
                 @Html.DisplayFor(m => i.Review1)
             </li>
         }
+        <li class="list-group-item">
+            <b>The Final Verdict:</b>
+            <br />
+            <b>@ViewData["finalreview"] stars</b>
+        </li>
     } else
             {
                 <p>No restaurants found...</p>
             }
 
 </ul>
+
+<div class="card" style="width: 18rem;">
+    <img src="~/images/food1.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>

@@ -32,6 +32,24 @@ namespace RestaurantReviews.Controllers
         {
             List<Data.Models.Review> foundReviews = _appRepo.GetReviews(name, zipcode);
 
+            int averageReview = 0;
+            int count = 0;
+
+            if (foundReviews != null)
+            {
+                foreach (var review in foundReviews)
+                {
+                    count += 1;
+                    averageReview += (int)review.Stars;
+                }
+
+                if (averageReview != 0)
+                {
+                    int finalAverave = averageReview / count;
+                    ViewData["finalreview"] = finalAverave;
+                }
+            }
+
             return View("Index", foundReviews);
         }
 

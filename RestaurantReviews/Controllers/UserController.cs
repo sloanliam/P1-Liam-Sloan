@@ -43,6 +43,7 @@ namespace RestaurantReviews.Controllers
             {
                 ViewBag.Username = user.username;
                 TempData["user"] = user.username;
+                TempData.Keep("user");
                 return View("LoggedIn");
             }
         }
@@ -53,9 +54,14 @@ namespace RestaurantReviews.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(string name, string username, string password)
+        public IActionResult Register(RegisteredUser user)
         {
-            ViewData["name"] = _appRepo.RegisterAccount(name, username, password);
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
+
+            ViewData["name"] = _appRepo.RegisterAccount(user.name, user.username, user.password);
             return View();
         }
     }
