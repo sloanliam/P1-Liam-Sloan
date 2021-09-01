@@ -5,54 +5,58 @@
 
 <link href="~/css/stylesheet.css" rel="stylesheet" />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to Review Shack</h1>
-</div>
+<div class="homelanding">
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Review Shack</h1>
+    </div>
 
-@{ 
-     if (TempData["user"] != null)
-     {
-        <h2>You are logged in as @TempData.Peek("user")
-        </h2>
-     }
-    TempData.Keep("user");
-}
-
-<form method="post" asp-action="GetReviews" class="searchform">
-    <p>Enter the restaurant's name and zipcode to find reviews for restaurants in your area.</p>
-    <input type="text" name="name">
-    <input type="number" name="zipcode" />
-    <input type="submit" class="btn btn-dark" />
-</form>
-
-<ul class="list-group">
-    @if (Model != null)
-    {
-    @foreach (var i in Model)
+    @{
+        if (TempData["user"] != null)
         {
-    <li class="list-group-item">
-        <b>@Html.DisplayFor(m => i.Stars) stars</b>
-        <br />
-        @Html.DisplayFor(m => i.Review1)
-    </li>
+            <h2>
+                You are logged in as @TempData.Peek("user")
+            </h2>
         }
-    <li class="list-group-item">
-        <b>The Final Verdict:</b>
-        <br />
-        <b>@ViewData["finalreview"] stars</b>
-    </li>
-    } else
+        TempData.Keep("user");
+    }
+
+    <form method="post" asp-action="GetReviews" class="searchform">
+        <p>Enter the restaurant's name and zipcode to find reviews for restaurants in your area.</p>
+        <input type="text" name="name">
+        <input type="number" name="zipcode" />
+        <input type="submit" class="btn btn-dark" />
+    </form>
+
+    <ul class="list-group">
+        @if (Model != null)
+        {
+            @foreach (var i in Model)
             {
-    <p>No restaurants found...</p>
+                <li class="list-group-item">
+                    <b>@Html.DisplayFor(m => i.Stars) stars</b>
+                    <br />
+                    @Html.DisplayFor(m => i.Review1)
+                </li>
             }
+            <li class="list-group-item">
+                <b>The Final Verdict:</b>
+                <br />
+                <b>@ViewData["finalreview"] stars</b>
+            </li>
+        }
+        else
+        {
+            <p>No restaurants found...</p>
+        }
 
-</ul>
+    </ul>
 
-<div class="card" style="width: 18rem;">
-    <img src="~/images/food1.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="card" style="width: 18rem;">
+        <img src="~/images/food1.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
     </div>
 </div>

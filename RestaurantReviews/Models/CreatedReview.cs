@@ -11,15 +11,19 @@ namespace RestaurantReviews.Models
         public int Id { get; set; }
 
         [Required]
+        [StringLength(maximumLength: 200, MinimumLength =10)]
+        [Display(Name ="review")]
         public string Review1 { get; set; }
 
         [Required]
         public string Restaurant { get; set; }
 
         [Required]
+        [Range(10000, 99999, ErrorMessage = "That is not a valid zipcode.")]
         public int Zipcode { get; set; }
 
         [Required]
+        [Range(1, 5)]
         public int Stars { get; set; }
 
         public CreatedReview() { }
