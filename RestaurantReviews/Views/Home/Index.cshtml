@@ -9,10 +9,13 @@
     <h1 class="display-4">Welcome to Review Shack</h1>
 </div>
 
-@if (ViewData["user"] != null)
-{
-    <h2>You are logged in as @TempData["user"]
-    </h2>
+@{ 
+     if (TempData["user"] != null)
+     {
+        <h2>You are logged in as @TempData.Peek("user")
+        </h2>
+     }
+    TempData.Keep("user");
 }
 
 <form method="post" asp-action="GetReviews" class="searchform">

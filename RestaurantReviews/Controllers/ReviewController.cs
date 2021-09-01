@@ -44,6 +44,7 @@ namespace RestaurantReviews.Controllers
             } else {
                 ViewData["error"] = "You must log in to create a review.";
             }
+            TempData.Keep("user");
             return View("Index");
         }
     }
