@@ -1,5 +1,7 @@
 ﻿using RestaurantReviews.Data.Entities;
 using RestaurantReviews.Data.Models;
+using Serilog;
+using Serilog.Sinks.File;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,8 +21,13 @@ namespace RestaurantReviews.Data
         /// Ef Core Design
         /// Ef Core Tools
         /// </dependencies>
+        /// 
+        private revtrainingdbContext context;
 
-        revtrainingdbContext context = new revtrainingdbContext();
+        public AppRepo(revtrainingdbContext loadedcontext)
+        {
+            context = loadedcontext;
+        }
 
         public string GetUsername(int userId)
         {
