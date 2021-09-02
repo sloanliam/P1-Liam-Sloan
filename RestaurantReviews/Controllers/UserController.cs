@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using RestaurantReviews.Data;
 using RestaurantReviews.Models;
 using System;
@@ -13,9 +14,12 @@ namespace RestaurantReviews.Controllers
     {
 
         private IRepository _appRepo;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IRepository appRepo)
+        public UserController(IRepository appRepo, ILogger<UserController> logger)
         {
+            _logger = logger;
+            logger.LogCritical("user page visited");
             _appRepo = appRepo;
         }
 
@@ -49,6 +53,7 @@ namespace RestaurantReviews.Controllers
                 ViewBag.Username = user.username;
                 TempData["user"] = user.username;
                 TempData.Keep("user");
+                _logger.LogCritical("user signed in.");
                 return View("LoggedIn");
             }
         }
@@ -67,6 +72,7 @@ namespace RestaurantReviews.Controllers
             }
 
             ViewData["name"] = _appRepo.RegisterAccount(user.name, user.username, user.password);
+            _logger.LogCritical("user created an account.");
             return View();
         }
     }

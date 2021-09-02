@@ -20,6 +20,7 @@ namespace RestaurantReviews.Controllers
         public HomeController(ILogger<HomeController> logger, IRepository appRepo)
         {
             _logger = logger;
+            _logger.LogInformation("Controller Initialized");
             _appRepo = appRepo;
         }
 
@@ -32,6 +33,7 @@ namespace RestaurantReviews.Controllers
         public IActionResult GetReviews(string name, int zipcode)
         {
             List<Data.Models.Review> foundReviews = _appRepo.GetReviews(name, zipcode);
+            _logger.LogInformation("user creating a review...");
 
             int averageReview = 0;
             int count = 0;

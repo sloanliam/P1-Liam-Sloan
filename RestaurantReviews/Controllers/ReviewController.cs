@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using RestaurantReviews.Data;
 using RestaurantReviews.Models;
 using System;
@@ -11,10 +12,13 @@ namespace RestaurantReviews.Controllers
     public class ReviewController : Controller
     {
         private IRepository _appRepo;
+        private readonly ILogger _logger;
 
-        public ReviewController(IRepository appRepo)
+        public ReviewController(IRepository appRepo, ILogger<ReviewController> logger)
         {
+            _logger = logger;
             _appRepo = appRepo;
+            _logger.LogCritical("Reviews page was visited");
         }
 
         public IActionResult Index()
@@ -41,6 +45,7 @@ namespace RestaurantReviews.Controllers
                     Stars = createdReview.Stars
                 };
                 _appRepo.WriteReview(user, newReview.Restaurant, newReview.Zipcode, newReview.Review1, newReview.Stars);
+                _logger.LogCritical("A user created a review");
             } else {
                 ViewData["error"] = "You must log in to create a review.";
             }
