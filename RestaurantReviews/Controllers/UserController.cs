@@ -14,12 +14,12 @@ namespace RestaurantReviews.Controllers
     {
 
         private IRepository _appRepo;
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger _logger;
 
         public UserController(IRepository appRepo, ILogger<UserController> logger)
         {
             _logger = logger;
-            logger.LogCritical("user page visited");
+            _logger.LogCritical("User visited Sign-in page");
             _appRepo = appRepo;
         }
 
@@ -53,7 +53,7 @@ namespace RestaurantReviews.Controllers
                 ViewBag.Username = user.username;
                 TempData["user"] = user.username;
                 TempData.Keep("user");
-                _logger.LogCritical("user signed in.");
+                _logger.LogCritical("User signed in.");
                 return View("LoggedIn");
             }
         }
@@ -72,8 +72,16 @@ namespace RestaurantReviews.Controllers
             }
 
             ViewData["name"] = _appRepo.RegisterAccount(user.name, user.username, user.password);
-            _logger.LogCritical("user created an account.");
-            return View();
+
+            if (ViewData["name"].Equals("That username already exists, please enter a new one"))
+            {
+                return View();
+            }
+            else
+            {
+                _logger.LogCritical("User created an account");
+                return this.RedirectToAction("SignIn");
+            }
         }
     }
 }

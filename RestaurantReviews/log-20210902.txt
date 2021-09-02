@@ -146,3 +146,410 @@
 2021-09-02 13:31:12.281 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Index (RestaurantReviews) in 9.1423ms
 2021-09-02 13:31:12.284 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Index (RestaurantReviews)'
 2021-09-02 13:31:12.286 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User - - - 200 - text/html;+charset=utf-8 23.6781ms
+2021-09-02 13:40:27.533 -04:00 [INF] Starting web host
+2021-09-02 13:40:27.752 -04:00 [INF] User profile is available. Using 'C:\Users\sloan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-02 13:40:27.824 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-02 13:40:27.824 -04:00 [INF] Hosting environment: Development
+2021-09-02 13:40:27.824 -04:00 [INF] Content root path: C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews
+2021-09-02 13:40:27.837 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/ - -
+2021-09-02 13:40:27.860 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:40:27.882 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.HomeController (RestaurantReviews).
+2021-09-02 13:40:27.944 -04:00 [INF] Controller Initialized
+2021-09-02 13:40:27.955 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:40:28.035 -04:00 [INF] Executed ViewResult - view Index executed in 82.2377ms.
+2021-09-02 13:40:28.036 -04:00 [INF] Executed action RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews) in 152.9395ms
+2021-09-02 13:40:28.036 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:40:28.041 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/ - - - 200 - text/html;+charset=utf-8 204.7662ms
+2021-09-02 13:40:28.072 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:40:28.077 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 5.1249ms
+2021-09-02 13:40:30.293 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/Review - -
+2021-09-02 13:40:30.295 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.ReviewController.Index (RestaurantReviews)'
+2021-09-02 13:40:30.296 -04:00 [INF] Route matched with {action = "Index", controller = "Review"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.ReviewController (RestaurantReviews).
+2021-09-02 13:40:30.297 -04:00 [FTL] Reviews page was visited
+2021-09-02 13:40:30.297 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:40:30.319 -04:00 [INF] Executed ViewResult - view Index executed in 21.5738ms.
+2021-09-02 13:40:30.319 -04:00 [INF] Executed action RestaurantReviews.Controllers.ReviewController.Index (RestaurantReviews) in 22.4366ms
+2021-09-02 13:40:30.319 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.ReviewController.Index (RestaurantReviews)'
+2021-09-02 13:40:30.319 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/Review - - - 200 - text/html;+charset=utf-8 25.8942ms
+2021-09-02 13:40:30.343 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:40:30.343 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.5565ms
+2021-09-02 13:40:31.387 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Signin - -
+2021-09-02 13:40:31.388 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:40:31.388 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:40:31.390 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:40:31.397 -04:00 [INF] Executed ViewResult - view SignIn executed in 7.1517ms.
+2021-09-02 13:40:31.397 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 8.3531ms
+2021-09-02 13:40:31.397 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:40:31.397 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Signin - - - 200 - text/html;+charset=utf-8 10.2219ms
+2021-09-02 13:40:31.417 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:40:31.418 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.4933ms
+2021-09-02 13:40:32.203 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Register - -
+2021-09-02 13:40:32.204 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:40:32.205 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:40:32.205 -04:00 [INF] Executing ViewResult, running view Register.
+2021-09-02 13:40:32.214 -04:00 [INF] Executed ViewResult - view Register executed in 8.4338ms.
+2021-09-02 13:40:32.214 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 8.6853ms
+2021-09-02 13:40:32.214 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:40:32.214 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Register - - - 200 - text/html;+charset=utf-8 10.6586ms
+2021-09-02 13:40:32.236 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:40:32.237 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.4919ms
+2021-09-02 13:40:33.374 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 222
+2021-09-02 13:40:33.374 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:40:33.381 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:40:33.396 -04:00 [INF] Executing ViewResult, running view Register.
+2021-09-02 13:40:33.397 -04:00 [INF] Executed ViewResult - view Register executed in 0.8405ms.
+2021-09-02 13:40:33.397 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 16.0676ms
+2021-09-02 13:40:33.397 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:40:33.397 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 222 - 200 - text/html;+charset=utf-8 23.6632ms
+2021-09-02 13:40:33.422 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:40:33.423 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.3000ms
+2021-09-02 13:40:44.982 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 252
+2021-09-02 13:40:44.983 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:40:44.983 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:40:45.362 -04:00 [INF] Entity Framework Core 5.0.9 initialized 'revtrainingdbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-09-02 13:40:46.085 -04:00 [INF] Executed DbCommand (57ms) [Parameters=[@__username_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[IsAdmin], [u].[Name], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2021-09-02 13:40:46.268 -04:00 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 100) (DbType = AnsiString), @p3='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([IsAdmin], [Name], [Password], [Username])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-09-02 13:40:46.356 -04:00 [INF] Executing RedirectResult, redirecting to /HomeController.
+2021-09-02 13:40:46.356 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 1372.9335ms
+2021-09-02 13:40:46.356 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:40:46.358 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 252 - 302 - - 1375.3760ms
+2021-09-02 13:40:46.359 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/HomeController - -
+2021-09-02 13:40:46.360 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/HomeController - - - 404 - - 0.8165ms
+2021-09-02 13:41:10.068 -04:00 [INF] Starting web host
+2021-09-02 13:41:10.292 -04:00 [INF] User profile is available. Using 'C:\Users\sloan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-02 13:41:10.375 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-02 13:41:10.375 -04:00 [INF] Hosting environment: Development
+2021-09-02 13:41:10.375 -04:00 [INF] Content root path: C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews
+2021-09-02 13:41:10.388 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/HomeController - -
+2021-09-02 13:41:10.417 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/HomeController - - - 404 - - 30.5313ms
+2021-09-02 13:41:13.726 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 222
+2021-09-02 13:41:13.727 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:41:13.761 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:41:13.863 -04:00 [INF] Executing ViewResult, running view Register.
+2021-09-02 13:41:13.943 -04:00 [INF] Executed ViewResult - view Register executed in 81.9006ms.
+2021-09-02 13:41:13.944 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 182.5863ms
+2021-09-02 13:41:13.944 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:41:13.946 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 222 - 200 - text/html;+charset=utf-8 220.9742ms
+2021-09-02 13:41:13.968 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:41:13.970 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.4083ms
+2021-09-02 13:41:14.040 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/favicon.ico - -
+2021-09-02 13:41:14.048 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews\wwwroot\favicon.ico'
+2021-09-02 13:41:14.048 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/favicon.ico - - - 200 5430 image/x-icon 8.2454ms
+2021-09-02 13:41:25.561 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 252
+2021-09-02 13:41:25.562 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:41:25.562 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:41:25.936 -04:00 [INF] Entity Framework Core 5.0.9 initialized 'revtrainingdbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-09-02 13:41:26.673 -04:00 [INF] Executed DbCommand (53ms) [Parameters=[@__username_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[IsAdmin], [u].[Name], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2021-09-02 13:41:26.844 -04:00 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 100) (DbType = AnsiString), @p3='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([IsAdmin], [Name], [Password], [Username])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-09-02 13:41:26.922 -04:00 [INF] Executing RedirectResult, redirecting to /User.
+2021-09-02 13:41:26.922 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 1359.6779ms
+2021-09-02 13:41:26.922 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:41:26.924 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 252 - 302 - - 1362.6057ms
+2021-09-02 13:41:26.925 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User - -
+2021-09-02 13:41:26.926 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Index (RestaurantReviews)'
+2021-09-02 13:41:26.926 -04:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:41:26.928 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:41:26.931 -04:00 [INF] Executed ViewResult - view Index executed in 2.9479ms.
+2021-09-02 13:41:26.931 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Index (RestaurantReviews) in 4.1166ms
+2021-09-02 13:41:26.931 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Index (RestaurantReviews)'
+2021-09-02 13:41:26.931 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User - - - 200 - text/html;+charset=utf-8 5.3961ms
+2021-09-02 13:41:26.953 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:41:26.953 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.4021ms
+2021-09-02 13:41:29.406 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/ - -
+2021-09-02 13:41:29.406 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:41:29.407 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.HomeController (RestaurantReviews).
+2021-09-02 13:41:29.408 -04:00 [INF] Controller Initialized
+2021-09-02 13:41:29.408 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:41:29.423 -04:00 [INF] Executed ViewResult - view Index executed in 15.4632ms.
+2021-09-02 13:41:29.423 -04:00 [INF] Executed action RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews) in 15.9451ms
+2021-09-02 13:41:29.423 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:41:29.424 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/ - - - 200 - text/html;+charset=utf-8 17.5178ms
+2021-09-02 13:41:29.451 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:41:29.452 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.0916ms
+2021-09-02 13:43:31.387 -04:00 [INF] Starting web host
+2021-09-02 13:43:31.618 -04:00 [INF] User profile is available. Using 'C:\Users\sloan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-02 13:43:31.698 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-02 13:43:31.698 -04:00 [INF] Hosting environment: Development
+2021-09-02 13:43:31.698 -04:00 [INF] Content root path: C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews
+2021-09-02 13:43:31.711 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/ - -
+2021-09-02 13:43:31.746 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:43:31.772 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.HomeController (RestaurantReviews).
+2021-09-02 13:43:31.838 -04:00 [INF] Controller Initialized
+2021-09-02 13:43:31.850 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:43:31.942 -04:00 [INF] Executed ViewResult - view Index executed in 94.3714ms.
+2021-09-02 13:43:31.943 -04:00 [INF] Executed action RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews) in 171.2816ms
+2021-09-02 13:43:31.944 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:43:31.947 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/ - - - 200 - text/html;+charset=utf-8 237.6482ms
+2021-09-02 13:43:31.962 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:43:31.964 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.4214ms
+2021-09-02 13:43:32.006 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/favicon.ico - -
+2021-09-02 13:43:32.015 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews\wwwroot\favicon.ico'
+2021-09-02 13:43:32.015 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/favicon.ico - - - 200 5430 image/x-icon 9.6083ms
+2021-09-02 13:43:34.289 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Signin - -
+2021-09-02 13:43:34.290 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:43:34.291 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:43:34.292 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:43:34.310 -04:00 [INF] Executed ViewResult - view SignIn executed in 18.5328ms.
+2021-09-02 13:43:34.310 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 19.0599ms
+2021-09-02 13:43:34.310 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:43:34.311 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Signin - - - 200 - text/html;+charset=utf-8 22.1673ms
+2021-09-02 13:43:34.333 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:43:34.333 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.4403ms
+2021-09-02 13:43:35.071 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Register - -
+2021-09-02 13:43:35.072 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:43:35.073 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:43:35.074 -04:00 [INF] Executing ViewResult, running view Register.
+2021-09-02 13:43:35.084 -04:00 [INF] Executed ViewResult - view Register executed in 10.0424ms.
+2021-09-02 13:43:35.084 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 11.1438ms
+2021-09-02 13:43:35.084 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:43:35.084 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Register - - - 200 - text/html;+charset=utf-8 13.5444ms
+2021-09-02 13:43:35.105 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:43:35.106 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.6505ms
+2021-09-02 13:43:41.496 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 241
+2021-09-02 13:43:41.496 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:43:41.505 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:43:41.894 -04:00 [INF] Entity Framework Core 5.0.9 initialized 'revtrainingdbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-09-02 13:43:42.599 -04:00 [INF] Executed DbCommand (54ms) [Parameters=[@__username_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[IsAdmin], [u].[Name], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2021-09-02 13:43:42.641 -04:00 [INF] Executing RedirectResult, redirecting to /Index/HomeController.
+2021-09-02 13:43:42.641 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 1135.9263ms
+2021-09-02 13:43:42.641 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:43:42.643 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 241 - 302 - - 1147.5134ms
+2021-09-02 13:43:42.644 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/Index/HomeController - -
+2021-09-02 13:43:42.645 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/Index/HomeController - - - 404 - - 0.4653ms
+2021-09-02 13:43:49.544 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/Index/HomeController - -
+2021-09-02 13:43:49.544 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/Index/HomeController - - - 404 - - 0.4616ms
+2021-09-02 13:44:21.983 -04:00 [INF] Starting web host
+2021-09-02 13:44:22.152 -04:00 [INF] User profile is available. Using 'C:\Users\sloan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-02 13:44:22.217 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-02 13:44:22.217 -04:00 [INF] Hosting environment: Development
+2021-09-02 13:44:22.217 -04:00 [INF] Content root path: C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews
+2021-09-02 13:44:22.230 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/ - -
+2021-09-02 13:44:22.251 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:44:22.269 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.HomeController (RestaurantReviews).
+2021-09-02 13:44:22.328 -04:00 [INF] Controller Initialized
+2021-09-02 13:44:22.340 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:44:22.416 -04:00 [INF] Executed ViewResult - view Index executed in 78.9652ms.
+2021-09-02 13:44:22.418 -04:00 [INF] Executed action RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews) in 148.0126ms
+2021-09-02 13:44:22.418 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:44:22.422 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/ - - - 200 - text/html;+charset=utf-8 194.2245ms
+2021-09-02 13:44:22.457 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:44:22.459 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.6292ms
+2021-09-02 13:44:23.579 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Signin - -
+2021-09-02 13:44:23.581 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:44:23.581 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:44:23.582 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:44:23.601 -04:00 [INF] Executed ViewResult - view SignIn executed in 18.6136ms.
+2021-09-02 13:44:23.601 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 19.1551ms
+2021-09-02 13:44:23.601 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:44:23.601 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Signin - - - 200 - text/html;+charset=utf-8 22.2430ms
+2021-09-02 13:44:23.624 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:44:23.624 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.5513ms
+2021-09-02 13:44:24.546 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Register - -
+2021-09-02 13:44:24.548 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:44:24.549 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:44:24.550 -04:00 [INF] Executing ViewResult, running view Register.
+2021-09-02 13:44:24.557 -04:00 [INF] Executed ViewResult - view Register executed in 7.7499ms.
+2021-09-02 13:44:24.558 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 9.1241ms
+2021-09-02 13:44:24.558 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:44:24.558 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Register - - - 200 - text/html;+charset=utf-8 11.8397ms
+2021-09-02 13:44:24.582 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:44:24.583 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.8348ms
+2021-09-02 13:44:30.619 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 248
+2021-09-02 13:44:30.619 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:44:30.626 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:44:31.024 -04:00 [INF] Entity Framework Core 5.0.9 initialized 'revtrainingdbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-09-02 13:44:31.708 -04:00 [INF] Executed DbCommand (59ms) [Parameters=[@__username_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[IsAdmin], [u].[Name], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2021-09-02 13:44:31.751 -04:00 [INF] Executing RedirectResult, redirecting to /User/SignIn.
+2021-09-02 13:44:31.752 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 1125.2358ms
+2021-09-02 13:44:31.752 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:44:31.754 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 248 - 302 - - 1135.2169ms
+2021-09-02 13:44:31.755 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/SignIn - -
+2021-09-02 13:44:31.755 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:44:31.755 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:44:31.755 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:44:31.756 -04:00 [INF] Executed ViewResult - view SignIn executed in 1.2094ms.
+2021-09-02 13:44:31.757 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 1.4116ms
+2021-09-02 13:44:31.757 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:44:31.757 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/SignIn - - - 200 - text/html;+charset=utf-8 1.9918ms
+2021-09-02 13:44:31.780 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:44:31.780 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.3737ms
+2021-09-02 13:46:28.472 -04:00 [INF] Starting web host
+2021-09-02 13:46:28.656 -04:00 [INF] User profile is available. Using 'C:\Users\sloan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-02 13:46:28.730 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-02 13:46:28.731 -04:00 [INF] Hosting environment: Development
+2021-09-02 13:46:28.731 -04:00 [INF] Content root path: C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews
+2021-09-02 13:46:28.744 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/SignIn - -
+2021-09-02 13:46:28.772 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:46:28.811 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:46:28.933 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:46:29.035 -04:00 [INF] Executed ViewResult - view SignIn executed in 111.5425ms.
+2021-09-02 13:46:29.036 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 225.3621ms
+2021-09-02 13:46:29.037 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:46:29.042 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/SignIn - - - 200 - text/html;+charset=utf-8 299.5033ms
+2021-09-02 13:46:29.054 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:46:29.056 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.8324ms
+2021-09-02 13:46:29.080 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/favicon.ico - -
+2021-09-02 13:46:29.086 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews\wwwroot\favicon.ico'
+2021-09-02 13:46:29.086 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/favicon.ico - - - 200 5430 image/x-icon 6.0867ms
+2021-09-02 13:46:32.974 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/ - -
+2021-09-02 13:46:32.975 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:46:32.976 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.HomeController (RestaurantReviews).
+2021-09-02 13:46:32.977 -04:00 [INF] Controller Initialized
+2021-09-02 13:46:32.978 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:46:32.997 -04:00 [INF] Executed ViewResult - view Index executed in 19.3499ms.
+2021-09-02 13:46:32.997 -04:00 [INF] Executed action RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews) in 20.615ms
+2021-09-02 13:46:32.997 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:46:32.997 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/ - - - 200 - text/html;+charset=utf-8 23.1811ms
+2021-09-02 13:46:33.028 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:46:33.029 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.2935ms
+2021-09-02 13:46:33.740 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Signin - -
+2021-09-02 13:46:33.741 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:46:33.741 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:46:33.743 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:46:33.744 -04:00 [INF] Executed ViewResult - view SignIn executed in 1.0063ms.
+2021-09-02 13:46:33.744 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 2.2211ms
+2021-09-02 13:46:33.744 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:46:33.744 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Signin - - - 200 - text/html;+charset=utf-8 3.9297ms
+2021-09-02 13:46:33.766 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:46:33.766 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.3107ms
+2021-09-02 13:46:34.947 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Register - -
+2021-09-02 13:46:34.948 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:46:34.949 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:46:34.949 -04:00 [INF] Executing ViewResult, running view Register.
+2021-09-02 13:46:34.956 -04:00 [INF] Executed ViewResult - view Register executed in 7.3724ms.
+2021-09-02 13:46:34.956 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 7.6268ms
+2021-09-02 13:46:34.956 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:46:34.956 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Register - - - 200 - text/html;+charset=utf-8 9.1678ms
+2021-09-02 13:46:34.982 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:46:34.982 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.4444ms
+2021-09-02 13:46:39.300 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 244
+2021-09-02 13:46:39.300 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:46:39.308 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:46:39.712 -04:00 [INF] Entity Framework Core 5.0.9 initialized 'revtrainingdbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-09-02 13:46:40.357 -04:00 [INF] Executed DbCommand (66ms) [Parameters=[@__username_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[IsAdmin], [u].[Name], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2021-09-02 13:46:40.400 -04:00 [INF] Executing ViewResult, running view Register.
+2021-09-02 13:46:40.401 -04:00 [INF] Executed ViewResult - view Register executed in 0.9387ms.
+2021-09-02 13:46:40.401 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 1092.8922ms
+2021-09-02 13:46:40.401 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:46:40.402 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 244 - 200 - text/html;+charset=utf-8 1102.6033ms
+2021-09-02 13:46:40.420 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:46:40.420 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.2848ms
+2021-09-02 13:46:49.521 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 237
+2021-09-02 13:46:49.521 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:46:49.521 -04:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(RestaurantReviews.Models.RegisteredUser) on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:46:49.541 -04:00 [INF] Entity Framework Core 5.0.9 initialized 'revtrainingdbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-09-02 13:46:49.581 -04:00 [INF] Executed DbCommand (39ms) [Parameters=[@__username_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[IsAdmin], [u].[Name], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2021-09-02 13:46:49.719 -04:00 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 100) (DbType = AnsiString), @p3='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([IsAdmin], [Name], [Password], [Username])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-09-02 13:46:49.803 -04:00 [INF] Executing RedirectResult, redirecting to /User/SignIn.
+2021-09-02 13:46:49.803 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.Register (RestaurantReviews) in 281.2714ms
+2021-09-02 13:46:49.803 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.Register (RestaurantReviews)'
+2021-09-02 13:46:49.803 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44362/User/Register application/x-www-form-urlencoded 237 - 302 - - 282.1504ms
+2021-09-02 13:46:49.805 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/SignIn - -
+2021-09-02 13:46:49.805 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:46:49.805 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:46:49.805 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:46:49.806 -04:00 [INF] Executed ViewResult - view SignIn executed in 0.8801ms.
+2021-09-02 13:46:49.806 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 1.0367ms
+2021-09-02 13:46:49.806 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:46:49.806 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/SignIn - - - 200 - text/html;+charset=utf-8 1.4012ms
+2021-09-02 13:46:49.828 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:46:49.828 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.2821ms
+2021-09-02 13:49:37.283 -04:00 [INF] Starting web host
+2021-09-02 13:49:37.450 -04:00 [INF] User profile is available. Using 'C:\Users\sloan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-02 13:49:37.524 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-02 13:49:37.524 -04:00 [INF] Hosting environment: Development
+2021-09-02 13:49:37.524 -04:00 [INF] Content root path: C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews
+2021-09-02 13:49:37.538 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/SignIn - -
+2021-09-02 13:49:37.561 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:49:37.579 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:49:37.643 -04:00 [FTL] User visited Sign-in page
+2021-09-02 13:49:37.655 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:49:37.733 -04:00 [INF] Executed ViewResult - view SignIn executed in 80.3556ms.
+2021-09-02 13:49:37.734 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 154.0146ms
+2021-09-02 13:49:37.734 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:49:37.738 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/SignIn - - - 200 - text/html;+charset=utf-8 201.8455ms
+2021-09-02 13:49:37.746 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:49:37.747 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.1563ms
+2021-09-02 13:49:37.773 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/favicon.ico - -
+2021-09-02 13:49:37.778 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\sloan\Desktop\P1-Liam-Sloan\RestaurantReviews\wwwroot\favicon.ico'
+2021-09-02 13:49:37.778 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/favicon.ico - - - 200 5430 image/x-icon 5.4957ms
+2021-09-02 13:50:07.643 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/ - -
+2021-09-02 13:50:07.643 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:50:07.644 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.HomeController (RestaurantReviews).
+2021-09-02 13:50:07.645 -04:00 [INF] Controller Initialized
+2021-09-02 13:50:07.645 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:50:07.664 -04:00 [INF] Executed ViewResult - view Index executed in 19.0177ms.
+2021-09-02 13:50:07.664 -04:00 [INF] Executed action RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews) in 19.865ms
+2021-09-02 13:50:07.664 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.HomeController.Index (RestaurantReviews)'
+2021-09-02 13:50:07.665 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/ - - - 200 - text/html;+charset=utf-8 21.7519ms
+2021-09-02 13:50:07.699 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:50:07.701 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 1.3291ms
+2021-09-02 13:50:08.356 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Signin - -
+2021-09-02 13:50:08.357 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:50:08.357 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:50:08.358 -04:00 [FTL] User visited Sign-in page
+2021-09-02 13:50:08.358 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:50:08.359 -04:00 [INF] Executed ViewResult - view SignIn executed in 1.1534ms.
+2021-09-02 13:50:08.360 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 2.2955ms
+2021-09-02 13:50:08.360 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:50:08.360 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Signin - - - 200 - text/html;+charset=utf-8 4.5322ms
+2021-09-02 13:50:08.386 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:50:08.387 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.4602ms
+2021-09-02 13:50:09.026 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/Review - -
+2021-09-02 13:50:09.026 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.ReviewController.Index (RestaurantReviews)'
+2021-09-02 13:50:09.027 -04:00 [INF] Route matched with {action = "Index", controller = "Review"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller RestaurantReviews.Controllers.ReviewController (RestaurantReviews).
+2021-09-02 13:50:09.027 -04:00 [FTL] Reviews page was visited
+2021-09-02 13:50:09.028 -04:00 [INF] Executing ViewResult, running view Index.
+2021-09-02 13:50:09.040 -04:00 [INF] Executed ViewResult - view Index executed in 12.4432ms.
+2021-09-02 13:50:09.040 -04:00 [INF] Executed action RestaurantReviews.Controllers.ReviewController.Index (RestaurantReviews) in 13.2347ms
+2021-09-02 13:50:09.040 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.ReviewController.Index (RestaurantReviews)'
+2021-09-02 13:50:09.041 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/Review - - - 200 - text/html;+charset=utf-8 14.9575ms
+2021-09-02 13:50:09.059 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:50:09.060 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.2345ms
+2021-09-02 13:50:09.530 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/User/Signin - -
+2021-09-02 13:50:09.530 -04:00 [INF] Executing endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:50:09.530 -04:00 [INF] Route matched with {action = "SignIn", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller RestaurantReviews.Controllers.UserController (RestaurantReviews).
+2021-09-02 13:50:09.530 -04:00 [FTL] User visited Sign-in page
+2021-09-02 13:50:09.530 -04:00 [INF] Executing ViewResult, running view SignIn.
+2021-09-02 13:50:09.532 -04:00 [INF] Executed ViewResult - view SignIn executed in 1.1548ms.
+2021-09-02 13:50:09.532 -04:00 [INF] Executed action RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews) in 1.5015ms
+2021-09-02 13:50:09.532 -04:00 [INF] Executed endpoint 'RestaurantReviews.Controllers.UserController.SignIn (RestaurantReviews)'
+2021-09-02 13:50:09.532 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/User/Signin - - - 200 - text/html;+charset=utf-8 2.3235ms
+2021-09-02 13:50:09.558 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - -
+2021-09-02 13:50:09.558 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - - - 200 3092 application/javascript;+charset=utf-8 0.3970ms
