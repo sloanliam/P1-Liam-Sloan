@@ -36,11 +36,10 @@ namespace RestaurantReviews.Data
             {
                 var user = context.Users.Single(u => u.Username.Equals(username));
 
-                if (user.IsAdmin.Equals("yes"))
+                if(user.IsAdmin != null)
                 {
                     return true;
-                }
-                else
+                } else
                 {
                     return false;
                 }

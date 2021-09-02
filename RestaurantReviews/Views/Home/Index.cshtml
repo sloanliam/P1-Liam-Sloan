@@ -17,6 +17,14 @@
                 You are logged in as @TempData.Peek("user")
             </h2>
         }
+
+            if (TempData["isAdmin"] != null)
+            {
+                <p class="text-danger">
+                    Admin Account.
+                </p>
+            }
+        TempData.Keep("isAdmin");
         TempData.Keep("user");
     }
 
@@ -50,6 +58,17 @@
         }
 
     </ul>
+
+    @if (TempData["isAdmin"] != null) {
+        <p>Remove a user's reviews</p>
+        <form>
+            <input type="text" />
+            <button type="submit">Remove</button>
+        </form>
+
+
+        TempData.Keep("isAdmin");
+    }
 
     <div class="card" style="width: 18rem;">
         <img src="~/images/food1.jpeg" class="card-img-top" alt="...">

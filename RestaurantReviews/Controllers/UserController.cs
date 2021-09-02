@@ -32,7 +32,7 @@ namespace RestaurantReviews.Controllers
         [HttpPost]
         public IActionResult SignIn(SignedInUser user)
         {
-
+            TempData.Remove("isAdmin");
             if (!ModelState.IsValid)
             {
                 return View(user);
@@ -42,6 +42,10 @@ namespace RestaurantReviews.Controllers
                 return View("Error");
             } else
             {
+                if (_appRepo.IsAdmin(user.username))
+                {
+                    TempData["isAdmin"] = "true";
+                }
                 ViewBag.Username = user.username;
                 TempData["user"] = user.username;
                 TempData.Keep("user");
