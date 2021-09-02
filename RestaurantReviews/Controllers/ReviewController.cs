@@ -50,7 +50,7 @@ namespace RestaurantReviews.Controllers
                 ViewData["error"] = "You must log in to create a review.";
             }
             TempData.Keep("user");
-            return View("Index");
+            return Redirect("~/Home");
         }
     }
 }

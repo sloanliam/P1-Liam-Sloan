@@ -54,7 +54,7 @@ namespace RestaurantReviews.Controllers
                 TempData["user"] = user.username;
                 TempData.Keep("user");
                 _logger.LogCritical("User signed in.");
-                return View("LoggedIn");
+                return Redirect("~/Home/Index");
             }
         }
 
