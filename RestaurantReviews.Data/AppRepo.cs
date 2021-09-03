@@ -259,5 +259,11 @@ namespace RestaurantReviews.Data
                 context.SaveChanges();
             }
         }
+
+        public List<Models.User> ListAllUsers()
+        {
+            return context.Users.Select(u =>
+            new Models.User(u.Username)).ToList();
+        }
     }
 }

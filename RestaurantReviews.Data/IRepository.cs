@@ -30,5 +30,7 @@ namespace RestaurantReviews.Data
 
         public void WriteReview(string username, string restaurant, int zipcode, string review, int stars);
 
+        public List<Models.User> ListAllUsers();
+
     }
 }

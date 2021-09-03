@@ -61,30 +61,5 @@
 
 </div>
 
-<div class="adminmenu">
-
-    @if (TempData["isAdmin"] != null)
-    {
-        <p><b>Remove a user's reviews</b></p>
-        <form>
-            <p>Username</p>
-            <input type="text" />
-            <button type="submit" class="btn-danger">Remove</button>
-        </form>
-        <br />
-        <br />
-        <p><b>Reveal a user's information</b></p>
-        <form>
-            <p>Username</p>
-            <input type="text" />
-            <button type="submit" class="btn-danger">Reveal</button>
-        </form>
-        <br />
-        <br />
-        <p><b>List of users registered</b></p>
-
-        TempData.Keep("isAdmin");
-    }
-</div>
     
 
