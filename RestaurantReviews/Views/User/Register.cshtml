@@ -1,20 +1,25 @@
 ﻿@model RegisteredUser
 @{
 }
-<h2>Welcome! Please create an account below.</h2>
 
-<form method="post">
-    <p>Name</p>
-    <input asp-for="name" type ="text" name="name" />
-    <span asp-validation-for="name" class="text-danger"></span>
-    <p>Username:</p>
-    <input asp-for="username" type="text" name="username" />
-    <span asp-validation-for="username" class="text-danger"></span>
-    <p>Password:</p>
-    <input asp-for="password" type="password" name="password" />
-    <span asp-validation-for="password" class="text-danger"></span>
-    <br />
-    <input type="submit" name="submit" value="submit" />
-</form>
+<link href="~/css/stylesheet.css" rel="stylesheet" />
+
+<div class="registerform">
+    <h2>Welcome! Please create an account below.</h2>
+
+    <form method="post">
+        <p>Name</p>
+        <input asp-for="name" type="text" name="name" />
+        <span asp-validation-for="name" class="text-danger"></span>
+        <p>Username:</p>
+        <input asp-for="username" type="text" name="username" />
+        <span asp-validation-for="username" class="text-danger"></span>
+        <p>Password:</p>
+        <input asp-for="password" type="password" name="password" />
+        <span asp-validation-for="password" class="text-danger"></span>
+        <br />
+        <input type="submit" class="btn btn-dark" name="submit" value="submit" />
+    </form>
+</div>
 
 <p>@ViewData["name"] </p>

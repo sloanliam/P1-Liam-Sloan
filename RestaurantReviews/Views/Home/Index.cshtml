@@ -13,7 +13,7 @@
     @{
         if (TempData["user"] != null)
         {
-            <h2>
+            <h2 id="logininfo">
                 You are logged in as @TempData.Peek("user")
             </h2>
         }
@@ -54,7 +54,7 @@
         }
         else
         {
-            <p>No restaurants found...</p>
+    <li class="list-group-item">No restaurants found...</li>
         }
 
     </ul>
@@ -70,6 +70,8 @@
         TempData.Keep("isAdmin");
     }
 
+    </div>
+
     <div class="card" style="width: 18rem;">
         <img src="~/images/food1.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -78,4 +80,3 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-</div>

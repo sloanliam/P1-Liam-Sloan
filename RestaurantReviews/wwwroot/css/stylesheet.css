@@ -1,8 +1,56 @@
 ﻿.searchform {
     text-align: center;
-    background-color: aqua;
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 
 .homelanding {
+    background-color:white;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 10px 5px 5px black;
+    padding: 50px;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
 
+.reviewform {
+    background-color:white;
+    box-shadow: 10px 5px 5px black;
+    padding: 50px;
+    border-color: black;
+    border-style: solid;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+#logininfo {
+    text-align: center;
+}
+
+.loginform {
+    background-color:white;
+    box-shadow: 10px 5px 5px black;
+    padding: 50px;
+    border-color: black;
+    border-style: solid;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+#registertext {
+    padding-top: 20px;
+}
+
+.registerform {
+    background-color:white;
+    box-shadow: 10px 5px 5px black;
+    padding: 50px;
+    border-color: black;
+    border-style: solid;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+.mainpage {
+    background: url("../images/food2.jpg") no-repeat center center fixed;
+}
+
+#mainfooter {
+    background-color:white;
 }

@@ -2,22 +2,28 @@
 @{
 }
 
-<h1>Leave a review!</h1>
-<form method="post" asp-action="LeaveReview">
-    <p>Restaurant</p>
-    <input asp-for="Restaurant" type="text" name="Restaurant"/>
-    <span asp-validation-for="Restaurant" class="text-danger"></span>
-    <p>Zipcode</p>
-    <input asp-for="Zipcode" type="text" name="Zipcode"/>
-    <span asp-validation-for="Zipcode" class="text-danger"></span>
-    <p>Review</p>
-    <textarea asp-for="Review1" name="Review1" class="form-control" rows="3"></textarea>
-    <span asp-validation-for="Review1" class="text-danger"></span>
-    <p>Star Rating</p>
-    <input asp-for="Stars" type="text" name="Stars" />
-    <span asp-validation-for="Stars" class="text-danger"></span>
-    <input type="submit" />
-</form>
+<link href="~/css/stylesheet.css" rel="stylesheet" />
+
+<div class="reviewform">
+    <div class="reviewformchild">
+    <h1>Leave a review!</h1>
+    <form method="post" asp-action="LeaveReview">
+        <p>Restaurant</p>
+        <input asp-for="Restaurant" type="text" name="Restaurant"/>
+        <span asp-validation-for="Restaurant" class="text-danger"></span>
+        <p>Zipcode</p>
+        <input asp-for="Zipcode" type="text" name="Zipcode"/>
+        <span asp-validation-for="Zipcode" class="text-danger"></span>
+        <p>Review</p>
+        <textarea asp-for="Review1" name="Review1" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Review1" class="text-danger"></span>
+        <p>Star Rating</p>
+        <input asp-for="Stars" type="text" name="Stars" />
+        <span asp-validation-for="Stars" class="text-danger"></span>
+        <input class="btn btn-dark" type="submit" />
+    </form>
+    </div>
+</div>
 
 @if(ViewData["error"] != null)
             {

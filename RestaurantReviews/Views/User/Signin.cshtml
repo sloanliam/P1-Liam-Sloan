@@ -1,16 +1,22 @@
 ﻿@model SignedInUser
 
-<h2>Welcome! Please enter your username and password.</h2>
-<p @ViewData["user"]></p>
-<form method="post" asp-action="SignIn">
-    <p>Username:</p>
-    <input asp-for="username" type="text" name="username" />
-    <span asp-validation-for="username" class="text-danger"></span>
-    <p>Password:</p>
-    <input asp-for="password" type="password" name="password" />
-    <span asp-validation-for="password" class="text-danger"></span>
-    <br />
-    <input type="submit" name="submit" value="submit" />
-</form>
+    <link href="~/css/stylesheet.css" rel="stylesheet" />
 
-<h2>Don't have an account? <a asp-action="Register">Register Here.</a></h2>
+    <div class="loginform">
+        <h2>Welcome! Please enter your username and password.</h2>
+        <p @ViewData["user"]></p>
+        <form method="post" asp-action="SignIn">
+            <p>Username:</p>
+            <input asp-for="username" type="text" name="username" />
+            <span asp-validation-for="username" class="text-danger"></span>
+            <p>Password:</p>
+            <input asp-for="password" type="password" name="password" />
+            <span asp-validation-for="password" class="text-danger"></span>
+            <br />
+            <input class="btn btn-dark" type="submit" name="submit" value="submit" />
+        </form>
+
+
+        <p id="registertext">Don't have an account? <a asp-action="Register">Register Here.</a></p>
+
+    </div>

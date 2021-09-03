@@ -16,5 +16,14 @@ namespace RestaurantReviews.Models
 
         [Required]
         public string password { get; set; }
+
+        public RegisteredUser() { }
+
+        public RegisteredUser(string name, string username, string password)
+        {
+            this.name = name;
+            this.username = username;
+            this.password = password;
+        }
     }
 }
