@@ -21,5 +21,25 @@ namespace RestaurantReviews.Controllers
             List<Data.Models.User> user = _appRepo.ListAllUsers();
             return View(user);
         }
+
+        public IActionResult GetUserInformation(string username)
+        {
+            try
+            {
+                Data.Models.User foundUser = _appRepo.GetUserInformation(username);
+
+                ViewData["nameInfo"] = foundUser.Name;
+                ViewData["usernameInfo"] = foundUser.Username;
+                ViewData["passwordInfo"] = foundUser.Password;
+            }
+            catch (System.InvalidOperationException)
+            {
+                ViewData["adminError"] = "Not a user.";
+            }
+
+            List<Data.Models.User> user = _appRepo.ListAllUsers();
+
+            return View("Index", user);
+        }
     }
 }

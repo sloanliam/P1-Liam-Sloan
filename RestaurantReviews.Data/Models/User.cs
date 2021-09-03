@@ -16,6 +16,13 @@ namespace RestaurantReviews.Data.Models
 
         public User() { }
 
+        public User(string name, string username, string password)
+        {
+            this.Name = name;
+            this.Username = username;
+            this.Password = password;
+        }
+
         public User(string username)
         {
             this.Username = username;

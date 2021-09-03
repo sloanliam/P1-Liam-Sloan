@@ -32,5 +32,7 @@ namespace RestaurantReviews.Data
 
         public List<Models.User> ListAllUsers();
 
+        public Models.User GetUserInformation(string username);
+
     }
 }

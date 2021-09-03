@@ -265,5 +265,14 @@ namespace RestaurantReviews.Data
             return context.Users.Select(u =>
             new Models.User(u.Username)).ToList();
         }
+
+        public Models.User GetUserInformation(string username)
+        {
+            var user = context.Users.Single(u => u.Username.Equals(username));
+
+            Models.User newUser = new Models.User(user.Name, user.Username, user.Password);
+
+            return newUser;
+        }
     }
 }

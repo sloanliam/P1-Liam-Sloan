@@ -8,19 +8,29 @@
 <link href="~/css/stylesheet.css" rel="stylesheet" />
 
 <div class="adminmenu">
+    <p><b>Reveal a user's information</b></p>
+    <form method="post" asp-action="GetUserInformation">
+        <p>Username</p>
+        <input type="text" name="username"/>
+        <button type="submit" class="btn-danger">Reveal</button>
+    </form>
+    @if(ViewData["nameInfo"] != null)
+            {
+                <p><b>Name: </b>@ViewData["nameInfo"]</p>
+                <p><b>Username: </b>@ViewData["usernameInfo"]</p>
+                <p><b>Password: </b>@ViewData["passwordInfo"]</p>
+            }
+            else
+            {
+                <p>@ViewData["adminError"]</p>
+            }
+    <br />
+    <br />
     <p><b>Remove a user's reviews</b></p>
     <form>
         <p>Username</p>
         <input type="text" />
         <button type="submit" class="btn-danger">Remove</button>
-    </form>
-    <br />
-    <br />
-    <p><b>Reveal a user's information</b></p>
-    <form>
-        <p>Username</p>
-        <input type="text" />
-        <button type="submit" class="btn-danger">Reveal</button>
     </form>
     <br />
     <br />
