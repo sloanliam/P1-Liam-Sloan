@@ -100,7 +100,7 @@ namespace RestaurantReviews.Testing
         }
 
         [Fact]
-        public void ProveThatIndexControllerIsCalled()
+        public void ProveThatUserIndexControllerIsCalled()
         {
             var logger = new Mock<ILogger<UserController>>();
             var mockRepo = new Mock<IRepository>();
@@ -108,6 +108,36 @@ namespace RestaurantReviews.Testing
             var userController = new UserController(mockRepo.Object, logger.Object);
 
             var result = userController.Index();
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+
+            Assert.Equal(viewResult, result);
+        }
+
+        [Fact]
+        public void ProveThatHomeIndexControllerIsCalled()
+        {
+            var logger = new Mock<ILogger<HomeController>>();
+            var mockRepo = new Mock<IRepository>();
+
+            var homeController = new HomeController(logger.Object, mockRepo.Object);
+
+            var result = homeController.Index();
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+
+            Assert.Equal(viewResult, result);
+        }
+
+        [Fact]
+        public void ProveThatAdminIndexControllerIsCalled()
+        {
+            var logger = new Mock<ILogger<AdminController>>();
+            var mockRepo = new Mock<IRepository>();
+
+            var adminController = new AdminController(mockRepo.Object, logger.Object);
+
+            var result = adminController.Index();
 
             var viewResult = Assert.IsType<ViewResult>(result);
 

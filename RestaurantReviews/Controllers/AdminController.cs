@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using RestaurantReviews.Data;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,13 @@ namespace RestaurantReviews.Controllers
     public class AdminController : Controller
     {
         private IRepository _appRepo;
+        private readonly ILogger<AdminController> _logger;
 
-        public AdminController(IRepository appRepo)
+        public AdminController(IRepository appRepo, ILogger<AdminController> logger)
         {
             _appRepo = appRepo;
+            _logger = logger;
+            _logger.LogCritical("admin page visited");
         }
 
         public IActionResult Index()
