@@ -1,0 +1,34 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+trigger:
+  branches:
+    include:
+    - master
+
+pr:
+  branches:
+    include:
+    - master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables: #Path to folder with .sln
+  solution: RestaurantReviews
+
+stages: 
+- stage: build
+  jobs:
+  - job: build
+    
+    steps:
+
+    - script: dotnet build --configuration Release
+      displayName: dotnet build
+      workingDirectory: $(solution)
+
+    - script: dotnet test --configuration Release
+      displayName: dotnet test
+      workingDirectory: $(solution)
