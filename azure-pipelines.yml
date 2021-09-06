@@ -16,7 +16,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables: #Path to folder with .sln
-  solution: Project Code
+  solution: RestaurantReviews
 
 stages: 
 - stage: build
